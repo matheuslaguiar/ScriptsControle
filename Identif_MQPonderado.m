@@ -58,7 +58,7 @@ y = k100e; % (vetor coluna)
 
 % ex.: amostras 10 e 11 com peso 100
 w1 = ones(21,1);
-w1(10:11) = [100;100];
+w1(10:11) = 100;
 W = diag(w1);
 
 % ' = transposto

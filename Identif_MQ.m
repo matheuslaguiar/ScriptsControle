@@ -35,6 +35,7 @@ y_vetor = X * theta_vetor
 ...       ...
 |yn|   | 1 xn |
 
+% Este valor de theta minimiza o erro a ser cometido
 theta_vetor = (X_t * X)^-1 * X_t * y
 theta_vetor = |theta1|
               |theta2|

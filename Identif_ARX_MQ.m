@@ -12,9 +12,9 @@ y(k) = a1*y(k-1) + b1*u(k-tau_d)
 Psi -> matriz de regressão
 
             matriz Psi             Theta
-|y1| = | y(k-1)  u(k-tau_d) | *    |a1|
-|y2|   | ...         ...    |      |b1|
-|y3|   | ...         ...    |
+y_vet = | y(k-1)  u(k-tau_d) | *    |a1|
+        | ...         ...    |      |b1|
+        | ...         ...    |
 
 % Este valor de theta minimiza o erro a ser cometido
 Theta = (Psi_t * Psi)^-1 * Psi_t * y
@@ -26,9 +26,9 @@ y(k) = a1*y(k-1) + a2*y(k-2) + b1*u(k-tau_d)
 Psi -> matriz de regressão
 
             matriz Psi                  Theta
-|y1| = | y(k-1) y(k-2) u(k-tau_d) | *    |a1|
-|y2|   | ...     ...      ...     |      |a2|
-|y3|   | ...     ...      ...     |      |b1| 
+y_vet = | y(k-1) y(k-2) u(k-tau_d) | *    |a1|
+        | ...     ...      ...     |      |a2|
+        | ...     ...      ...     |      |b1| 
 
 % Este valor de theta minimiza o erro a ser cometido
 Theta = (Psi_t * Psi)^-1 * Psi_t * y
@@ -39,10 +39,10 @@ y(k) = a1*y(k-1) + a2*y(k-2) + b1*u(k-tau_d) + b2*u(k-tau_d-1)
 Psi -> matriz de regressão
 
             matriz Psi                               Theta
-|y1| = | y(k-1) y(k-2) u(k-tau_d) u(k-tau_d-1) | *    |a1|
-|y2|   | ...     ...      ...        ...       |      |a2|
-|y3|   | ...     ...      ...        ...       |      |b1| 
-|y4|   | ...     ...      ...        ...       |      |b2| 
+y_vet = | y(k-1) y(k-2) u(k-tau_d) u(k-tau_d-1) | *    |a1|
+        | ...     ...      ...        ...       |      |a2|
+        | ...     ...      ...        ...       |      |b1| 
+        | ...     ...      ...        ...       |      |b2| 
 
 % Este valor de theta minimiza o erro a ser cometido
 Theta = (Psi_t * Psi)^-1 * Psi_t * y

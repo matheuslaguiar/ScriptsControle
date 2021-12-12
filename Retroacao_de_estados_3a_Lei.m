@@ -1,5 +1,8 @@
 % Terceira Lei do Controle por Retroação de Estados
-%
+
+% Metodo algebrico
+% |s*I - A + B*K| = (s-polo_1)(s-polo_2)...(s-polo_n)
+
 % Metodo de Ackerman
 
 ts = 0.83;

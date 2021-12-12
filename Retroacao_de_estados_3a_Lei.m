@@ -21,3 +21,6 @@ J = [s1 s2]; % J = [s1 s2]
 K = acker(A,B,J); % K = [K1 -KI]
 K1 = K(1);
 KI = -K(2);
+
+% Apos rodar o simulink:
+% plot(out.tempo, out.ControlX1)

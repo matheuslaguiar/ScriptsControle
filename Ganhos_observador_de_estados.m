@@ -22,4 +22,5 @@ eig(a) % det(lambda_sistema*I - a) = 0 -> encontrar lambda_sistema
 lambda = [-5 -6];
 
 % vetor de ganhos do observador:
+% l = Ke (ganhos estimados)
 l = acker(a,c',lambda) % a e c' devem ter o mesmo numero de linhas

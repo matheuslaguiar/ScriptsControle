@@ -1,4 +1,4 @@
-% Observadores de estado
+% Calculo dos ganhos do observador de estados
 
 % Metodo algebrico
 % |s*I - A + l*C| = (s-lambda_1)(s-lambda_2)...(s-lambda_n)

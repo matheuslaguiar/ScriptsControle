@@ -115,9 +115,14 @@ Theta = inv(Psi'* Psi)*Psi'* Saida(1:length(Psi));
 
 i = 62;
 Ye = zeros(62,1); % Preenche as primeiras posições com 0 (atraso)
+EQM = 0;
+
 while(i<length(Saida))
     Ye(i) = Theta(1)*Ye(i-1) + Theta(2)*Ye(i-2) + Theta(3)*Degrau(i-61);
+    EQM = EQM + (Ye(i) - Saida(i))^2;
     i = i+1;
 end
+EQM = EQM/length(Ye) % Erro quadrático médio
+
 TempoE = Tempo(1:length(Ye));
 plot(TempoE,Ye,'r',Tempo,Saida,'b')
